@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navlink {
+        @apply p-4 flex gap-3 items-center cursor-pointer transition-all duration-100
+    }
+    /* Javascript style */
+    .active {
+        @apply border-l-8 border-l-dark-mode bg-highlight
+    }
+    .add-btn {
+        @apply bg-dark-mode text-light-mode p-4 flex justify-center items-center gap-2 hover:opacity-95
+    }
+    .button-style {
+        @apply text-light-mode flex items-center justify-around gap-2 py-2 px-4 rounded-4 hover:opacity-95
+    }
+    .list-wrapper {
+        @apply text-dark-mode py-6 flex justify-between items-center border-b  px-4 mx-auto h-20
+    }
+}
